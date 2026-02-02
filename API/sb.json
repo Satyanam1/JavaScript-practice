@@ -1,0 +1,10 @@
+{
+    "empl":[
+        {
+            "empno":"1",
+            "name":"satyanam",
+            "city":"bhopal",
+            "salary":55000
+        }
+    ]
+}

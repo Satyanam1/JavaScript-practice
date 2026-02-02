@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            background-color: rgb(20, 179, 104);
+            padding: 10px 25px;
+            margin:50px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: none;
+            color: white
+        }
+
+        button:active {
+            scale: 0.95;
+        }
+
+        .box {
+            padding-top: 30px;
+            padding-left: 10px;
+            margin-left: 80px;
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+            border-radius: 10px            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to home Page</h1>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="insert.html">insert page</a>
+        <a href="display.html">dispaly</a>
+        <a href="update.html">update page</a>
+        <a href="search.html">search page</a>
+        <a href="contact.html">contact page</a>
+    </div>
+
+    <hr size="5" color="lightblue">
+    <h2>Insert Employe Data</h2>
+
+    <div class="box">
+
+        Enter Emp no: <input type="text" id="emono">
+        <br><br>
+        Enter Name: <input type="text" id="name"> <br><br>
+        Enter City: <input type="text" id="city"><br><br>
+        Enter Salary: <input type="text" id="salary"><br><br>
+
+        <button id="btn1">Save Data</button>
+    </div>
+    
+
+    <script>
+        document.getElementById('btn1').addEventListener('click', myhome);
+        async function myhome() {
+            let empno = document.getElementById("emono").value;
+            let name = document.getElementById("name").value;
+            let city = document.getElementById("city").value;
+            let salary = document.getElementById("salary").value;
+
+
+            const respond = await fetch("http://localhost:3000/employess", {
+                method: "post",
+                body: JSON.stringify({
+                    "empno": empno,
+                    "name": name,
+                    "city": city,
+                    "salary": salary
+                })
+            });
+
+            alert("Data saved successfully!")
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
