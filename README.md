@@ -4,11 +4,11 @@ This repository contains my JavaScript practice code while learning core concept
 The code is written inside `script.js` and mostly commented for reference and revision.
 
 ## Topics Covered
-• Basic JavaScript syntax✅
-• Console-based examples✅
-• Array methods✅
-• String methods✅
-•
+- Basic JavaScript syntax✅
+- Console-based examples✅
+- Array methods✅
+- String methods✅
+-
 
 ## Files
 - `index.html` – Basic HTML file to link JavaScript
