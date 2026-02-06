@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column; 
+}
+
+
+h5{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+h1{
+    font-size: 150px;
+    background-color: white;
+    padding: 40px ;
+    font-weight: 100;
+    border-radius: 10px;
+    letter-spacing: 8px;
+    margin-top: 30px;
+   
+
+}
+
+button{
+    font-size: 25px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    background-color: aqua;
+
+} 
+button:active{
+    scale: 0.95;
+}
+  
+
+
