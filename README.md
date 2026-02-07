@@ -17,5 +17,10 @@ The code is written inside `script.js` and mostly commented for reference and re
 ## Purpose
 This repository is meant for learning, revision, and experimenting with JavaScript basics.
 
+## Micro Projects
+   - IPL Winner Guess
+   - Card -- make friends and strange
+   - 
+
 ## Note
 This is beginner-level practice code and will be improved and expanded as I continue learning.
